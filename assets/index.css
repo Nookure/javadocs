@@ -88,7 +88,7 @@ body {
     display: inline-block;
     margin-left: 10%;
     width: 80%;
-    height: 26vh;
+    height: 300px;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
@@ -155,13 +155,14 @@ a:active {
     display: inline-block;
     margin-left: 10%;
     width: 80%;
-    height: 26vh;
+    height: 250px;
     background: rgba(255, 255, 255, 0.19);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.7px);
     -webkit-backdrop-filter: blur(10.7px);
     border: 1px solid rgba(255, 255, 255, 0.07);
+
 
 }
 
