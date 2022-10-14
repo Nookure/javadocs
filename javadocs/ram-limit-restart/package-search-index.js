@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"es.angelillo15.rlr.api"},{"l":"es.angelillo15.rlr.api.events"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"es.angelillo15.rlr.api"},{"l":"es.angelillo15.rlr.api.bukkit.events"}]
