@@ -142,6 +142,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">CommandOnLimitReachedEvent</span>
 extends org.bukkit.event.Event
 implements org.bukkit.event.Cancellable</pre>
+<div class="block">This event would be fired when the limit is reached and a command is executed
+ <p>
+ This event has a method to get the command and another to cancel the execution
+ of the command</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="#getCommand()"><code>getCommand()</code></a>, 
+<a href="#setCancelled(boolean)"><code>setCancelled(boolean)</code></a></dd>
+</dl>
 </li>
 </ul>
 </div>
@@ -179,8 +188,7 @@ implements org.bukkit.event.Cancellable</pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(org.bukkit.entity.Player,java.lang.String)">CommandOnLimitReachedEvent</a></span>&#8203;(org.bukkit.entity.Player&nbsp;player,
-                          java.lang.String&nbsp;command)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">CommandOnLimitReachedEvent</a></span>&#8203;(java.lang.String&nbsp;command)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -255,14 +263,13 @@ implements org.bukkit.event.Cancellable</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(org.bukkit.entity.Player,java.lang.String)">
+<a id="&lt;init&gt;(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CommandOnLimitReachedEvent</h4>
-<pre>public&nbsp;CommandOnLimitReachedEvent&#8203;(org.bukkit.entity.Player&nbsp;player,
-                                  java.lang.String&nbsp;command)</pre>
+<pre>public&nbsp;CommandOnLimitReachedEvent&#8203;(java.lang.String&nbsp;command)</pre>
 </li>
 </ul>
 </li>
