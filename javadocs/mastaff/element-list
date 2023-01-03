@@ -1,6 +1,7 @@
 es.angelillo15.mast.api
 es.angelillo15.mast.api.cmd
 es.angelillo15.mast.api.database
+es.angelillo15.mast.api.database.sql
 es.angelillo15.mast.api.exceptions
 es.angelillo15.mast.api.gui
 es.angelillo15.mast.api.items
