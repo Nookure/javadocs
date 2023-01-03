@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -169,43 +169,55 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVanished()">isVanished</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreInventory()">restoreInventory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Restore inventory</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveInventory()">saveInventory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Save inventory</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendPluginMessage()">sendPluginMessage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Send plugin message to the bungee</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setItems()">setItems</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Set staff items to the player</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStaffMode(@lombok.NonNullboolean)">setStaffMode</a></span>&#8203;(@lombok.NonNull boolean&nbsp;staffMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleStaffMode()">toggleStaffMode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">toggle the staff mode</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleVanish()">toggleVanish</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Toggle the vanish mode</div>
 </td>
 </tr>
 </table>
@@ -264,6 +276,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="exceptions/AlreadyEnableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyEnableException</a></code></dd>
 <dd><code><a href="exceptions/AlreadyDisableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyDisableException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="toggleVanish()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toggleVanish</h4>
+<pre class="methodSignature">void&nbsp;toggleVanish()</pre>
+<div class="block">Toggle the vanish mode</div>
+</li>
+</ul>
+<a id="isVanished()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isVanished</h4>
+<pre class="methodSignature">boolean&nbsp;isVanished()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the player is vanished or false if not</dd>
 </dl>
 </li>
 </ul>
