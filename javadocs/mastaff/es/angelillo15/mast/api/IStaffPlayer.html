@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -166,68 +166,89 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>org.bukkit.ChatColor</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGlowColor()">getGlowColor</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get the glow color</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="items/StaffItem.html" title="class in es.angelillo15.mast.api.items">StaffItem</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getItems()">getItems</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get staff items</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.bukkit.entity.Player</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayer()">getPlayer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isStaffMode()">isStaffMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isVanished()">isVanished</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restoreInventory()">restoreInventory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Restore inventory</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#saveInventory()">saveInventory</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Save inventory</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendPluginMessage()">sendPluginMessage</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Send plugin message to the bungee</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGlowColor(org.bukkit.ChatColor)">setGlowColor</a></span>&#8203;(org.bukkit.ChatColor&nbsp;color)</code></th>
+<td class="colLast">
+<div class="block">Set a glow color</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGlowing(boolean)">setGlowing</a></span>&#8203;(boolean&nbsp;status)</code></th>
+<td class="colLast">
+<div class="block">enable / disable glow</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setItems()">setItems</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Set staff items to the player</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStaffMode(@lombok.NonNullboolean)">setStaffMode</a></span>&#8203;(@lombok.NonNull boolean&nbsp;staffMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleStaffMode()">toggleStaffMode</a></span>()</code></th>
 <td class="colLast">
 <div class="block">toggle the staff mode</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleVanish()">toggleVanish</a></span>()</code></th>
 <td class="colLast">
@@ -406,7 +427,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <a id="changeGamemode(org.bukkit.GameMode)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>changeGamemode</h4>
 <pre class="methodSignature">void&nbsp;changeGamemode&#8203;(org.bukkit.GameMode&nbsp;gamemode)</pre>
@@ -414,6 +435,48 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>gamemode</code> - gamemode to change</dd>
+</dl>
+</li>
+</ul>
+<a id="setGlowColor(org.bukkit.ChatColor)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setGlowColor</h4>
+<pre class="methodSignature">void&nbsp;setGlowColor&#8203;(org.bukkit.ChatColor&nbsp;color)</pre>
+<div class="block">Set a glow color</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>color</code> - color to set</dd>
+</dl>
+</li>
+</ul>
+<a id="getGlowColor()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGlowColor</h4>
+<pre class="methodSignature">org.bukkit.ChatColor&nbsp;getGlowColor()</pre>
+<div class="block">Get the glow color</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the glow color</dd>
+</dl>
+</li>
+</ul>
+<a id="setGlowing(boolean)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setGlowing</h4>
+<pre class="methodSignature">void&nbsp;setGlowing&#8203;(boolean&nbsp;status)</pre>
+<div class="block">enable / disable glow</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>status</code> - status to set</dd>
 </dl>
 </li>
 </ul>
