@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,7 +238,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStaffMode(@lombok.NonNullboolean)">setStaffMode</a></span>&#8203;(@lombok.NonNull boolean&nbsp;staffMode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStaffMode(@lombok.NonNullboolean,boolean)">setStaffMode</a></span>&#8203;(@lombok.NonNull boolean&nbsp;staffMode,
+            boolean&nbsp;saveInventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -249,6 +250,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleStaffMode(boolean)">toggleStaffMode</a></span>&#8203;(boolean&nbsp;saveInventory)</code></th>
+<td class="colLast">
+<div class="block">toggle the staff mode</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toggleVanish()">toggleVanish</a></span>()</code></th>
 <td class="colLast">
@@ -282,6 +290,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">toggle the staff mode</div>
 </li>
 </ul>
+<a id="toggleStaffMode(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toggleStaffMode</h4>
+<pre class="methodSignature">void&nbsp;toggleStaffMode&#8203;(boolean&nbsp;saveInventory)</pre>
+<div class="block">toggle the staff mode</div>
+</li>
+</ul>
 <a id="isStaffMode()">
 <!--   -->
 </a>
@@ -295,14 +313,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 </li>
 </ul>
-<a id="setStaffMode(@lombok.NonNullboolean)">
+<a id="setStaffMode(@lombok.NonNullboolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setStaffMode</h4>
 <pre class="methodSignature">void&nbsp;setStaffMode&#8203;(@NonNull
-                  @lombok.NonNull boolean&nbsp;staffMode)
+                  @lombok.NonNull boolean&nbsp;staffMode,
+                  boolean&nbsp;saveInventory)
            throws <a href="exceptions/AlreadyEnableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyEnableException</a>,
                   <a href="exceptions/AlreadyDisableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyDisableException</a></pre>
 <dl>
