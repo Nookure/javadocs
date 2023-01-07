@@ -1,4 +1,8 @@
 es.angelillo15.mast.api
+es.angelillo15.mast.api.chat.api
+es.angelillo15.mast.api.chat.api.chat
+es.angelillo15.mast.api.chat.api.chat.hover.content
+es.angelillo15.mast.api.chat.chat
 es.angelillo15.mast.api.cmd
 es.angelillo15.mast.api.database
 es.angelillo15.mast.api.database.sql
