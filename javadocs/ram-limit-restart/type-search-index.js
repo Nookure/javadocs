@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"es.angelillo15.rlr.api.bukkit.events","l":"CommandOnLimitReachedEvent"},{"p":"es.angelillo15.rlr.api","l":"ILogger"},{"p":"es.angelillo15.rlr.api.bukkit.events","l":"LimitReachedEvent"},{"p":"es.angelillo15.rlr.api","l":"RLRPlugin"}]

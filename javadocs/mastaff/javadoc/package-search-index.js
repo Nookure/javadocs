@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"es.angelillo15.mast.api"},{"l":"es.angelillo15.mast.api.cmd"},{"l":"es.angelillo15.mast.api.database"},{"l":"es.angelillo15.mast.api.exceptions"},{"l":"es.angelillo15.mast.api.gui"},{"l":"es.angelillo15.mast.api.items"},{"l":"es.angelillo15.mast.api.managers"},{"l":"es.angelillo15.mast.api.material"}]
