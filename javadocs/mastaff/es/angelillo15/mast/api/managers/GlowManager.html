@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -182,56 +182,26 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addGlow(org.bukkit.ChatColor,es.angelillo15.glow.data.glow.Glow)">addGlow</a></span>&#8203;(org.bukkit.ChatColor&nbsp;color,
-       es.angelillo15.glow.data.glow.Glow&nbsp;glow)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearColorList()">clearColorList</a></span>()</code></th>
 <td class="colLast">
 <div class="block">clear all colors</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clearGlowList()">clearGlowList</a></span>()</code></th>
-<td class="colLast">
-<div class="block">clear all glows</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static org.bukkit.ChatColor</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColor(java.lang.String)">getColor</a></span>&#8203;(java.lang.String&nbsp;group)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static java.util.ArrayList&lt;org.bukkit.ChatColor&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColorList()">getColorList</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get all colors</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>static es.angelillo15.glow.data.glow.Glow</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGlow(org.bukkit.ChatColor)">getGlow</a></span>&#8203;(org.bukkit.ChatColor&nbsp;color)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static java.util.ArrayList&lt;es.angelillo15.glow.data.glow.Glow&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGlowList()">getGlowList</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Get all glows</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeColor(java.lang.String)">removeColor</a></span>&#8203;(java.lang.String&nbsp;group)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeGlow(org.bukkit.ChatColor)">removeGlow</a></span>&#8203;(org.bukkit.ChatColor&nbsp;color)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -277,73 +247,6 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="addGlow(org.bukkit.ChatColor,es.angelillo15.glow.data.glow.Glow)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addGlow</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;addGlow&#8203;(org.bukkit.ChatColor&nbsp;color,
-                           es.angelillo15.glow.data.glow.Glow&nbsp;glow)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>color</code> - the color</dd>
-<dd><code>glow</code> - the glow</dd>
-</dl>
-</li>
-</ul>
-<a id="getGlow(org.bukkit.ChatColor)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getGlow</h4>
-<pre class="methodSignature">public static&nbsp;es.angelillo15.glow.data.glow.Glow&nbsp;getGlow&#8203;(org.bukkit.ChatColor&nbsp;color)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>color</code> - the name of the glow to get</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the glow</dd>
-</dl>
-</li>
-</ul>
-<a id="getGlowList()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getGlowList</h4>
-<pre class="methodSignature">public static&nbsp;java.util.ArrayList&lt;es.angelillo15.glow.data.glow.Glow&gt;&nbsp;getGlowList()</pre>
-<div class="block">Get all glows</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>ArrayList of glows</dd>
-</dl>
-</li>
-</ul>
-<a id="clearGlowList()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>clearGlowList</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;clearGlowList()</pre>
-<div class="block">clear all glows</div>
-</li>
-</ul>
-<a id="removeGlow(org.bukkit.ChatColor)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>removeGlow</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;removeGlow&#8203;(org.bukkit.ChatColor&nbsp;color)</pre>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>color</code> - to delete</dd>
-</dl>
-</li>
-</ul>
 <a id="addColor(java.lang.String,org.bukkit.ChatColor)">
 <!--   -->
 </a>
