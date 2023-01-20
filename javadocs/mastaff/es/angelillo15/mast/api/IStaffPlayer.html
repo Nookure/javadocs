@@ -124,6 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <hr>
 <pre>public interface <span class="typeNameLabel">IStaffPlayer</span></pre>
+<div class="block">This interface allows to you to interact with the staff players</div>
 </li>
 </ul>
 </div>
@@ -238,7 +239,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStaffMode(@lombok.NonNullboolean,boolean)">setStaffMode</a></span>&#8203;(@lombok.NonNull boolean&nbsp;staffMode,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStaffMode(boolean,boolean)">setStaffMode</a></span>&#8203;(boolean&nbsp;staffMode,
             boolean&nbsp;saveInventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -316,24 +317,26 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">boolean&nbsp;isStaffMode()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the player is in staff mode or false if not</dd>
+<dd>boolean
+ Returns true if the player is in StaffMode</dd>
 </dl>
 </li>
 </ul>
-<a id="setStaffMode(@lombok.NonNullboolean,boolean)">
+<a id="setStaffMode(boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setStaffMode</h4>
-<pre class="methodSignature">void&nbsp;setStaffMode&#8203;(@NonNull
-                  @lombok.NonNull boolean&nbsp;staffMode,
+<pre class="methodSignature">void&nbsp;setStaffMode&#8203;(boolean&nbsp;staffMode,
                   boolean&nbsp;saveInventory)
            throws <a href="exceptions/AlreadyEnableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyEnableException</a>,
                   <a href="exceptions/AlreadyDisableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyDisableException</a></pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>staffMode</code> - enable or disable the staff mode</dd>
+<dd><code>staffMode</code> - enable or disable the staff mode
+ Method to enable or disable the StaffMode,
+ ths method can throws exceptions</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="exceptions/AlreadyEnableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyEnableException</a></code></dd>
 <dd><code><a href="exceptions/AlreadyDisableException.html" title="class in es.angelillo15.mast.api.exceptions">AlreadyDisableException</a></code></dd>
@@ -359,7 +362,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">boolean&nbsp;isVanished()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the player is vanished or false if not</dd>
+<dd>boolean
+ Returns true if the p</dd>
 </dl>
 </li>
 </ul>
@@ -372,7 +376,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature">org.bukkit.entity.Player&nbsp;getPlayer()</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the player</dd>
+<dd>the player
+ Method to get the Player under StaffPlayer</dd>
 </dl>
 </li>
 </ul>
