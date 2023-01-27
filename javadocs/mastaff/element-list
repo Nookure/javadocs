@@ -10,5 +10,6 @@ es.angelillo15.mast.api.event
 es.angelillo15.mast.api.exceptions
 es.angelillo15.mast.api.gui
 es.angelillo15.mast.api.items
+es.angelillo15.mast.api.libs
 es.angelillo15.mast.api.managers
 es.angelillo15.mast.api.material
