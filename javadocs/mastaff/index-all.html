@@ -1428,7 +1428,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><a href="es/angelillo15/mast/api/database/sql/package-summary.html">es.angelillo15.mast.api.database.sql</a> - package es.angelillo15.mast.api.database.sql</dt>
 <dd>&nbsp;</dd>
-<dt><a href="es/angelillo15/mast/api/event/bukkit/package-summary.html">es.angelillo15.mast.api.event.bukkit</a> - package es.angelillo15.mast.api.event.bukkit</dt>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/freeze/package-summary.html">es.angelillo15.mast.api.event.bukkit.freeze</a> - package es.angelillo15.mast.api.event.bukkit.freeze</dt>
+<dd>&nbsp;</dd>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/staff/package-summary.html">es.angelillo15.mast.api.event.bukkit.staff</a> - package es.angelillo15.mast.api.event.bukkit.staff</dt>
 <dd>&nbsp;</dd>
 <dt><a href="es/angelillo15/mast/api/exceptions/package-summary.html">es.angelillo15.mast.api.exceptions</a> - package es.angelillo15.mast.api.exceptions</dt>
 <dd>&nbsp;</dd>
@@ -1555,9 +1557,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/managers/FreezeManager.html#%3Cinit%3E()">FreezeManager()</a></span> - Constructor for class es.angelillo15.mast.api.managers.<a href="es/angelillo15/mast/api/managers/FreezeManager.html" title="class in es.angelillo15.mast.api.managers">FreezeManager</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit"><span class="typeNameLink">FreezeMessageEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/package-summary.html">es.angelillo15.mast.api.event.bukkit</a></dt>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze"><span class="typeNameLink">FreezeMessageEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/freeze/package-summary.html">es.angelillo15.mast.api.event.bukkit.freeze</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#%3Cinit%3E(org.bukkit.entity.Player)">FreezeMessageEvent(Player)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#%3Cinit%3E(org.bukkit.entity.Player)">FreezeMessageEvent(Player)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze"><span class="typeNameLink">FreezePlayerEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/freeze/package-summary.html">es.angelillo15.mast.api.event.bukkit.freeze</a></dt>
+<dd>
+<div class="block">Event called when a player gets frozen</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html#%3Cinit%3E(org.bukkit.entity.Player,org.bukkit.entity.Player)">FreezePlayerEvent(Player, Player)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezePlayerEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/material/XMaterial.html#FROG_SPAWN_EGG">FROG_SPAWN_EGG</a></span> - es.angelillo15.mast.api.material.<a href="es/angelillo15/mast/api/material/XMaterial.html" title="enum in es.angelillo15.mast.api.material">XMaterial</a></dt>
 <dd>&nbsp;</dd>
@@ -1636,13 +1644,39 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Returns the font of this component without checking the parents font.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html#getFreezerPlayer()">getFreezerPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezePlayerEvent</a></dt>
+<dd>
+<div class="block">Get the player who froze the player</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html#getFreezerPlayer()">getFreezerPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">UnFreezePlayerEvent</a></dt>
+<dd>
+<div class="block">Get the player who froze the player</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html#getFrozenPlayer()">getFrozenPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezePlayerEvent</a></dt>
+<dd>
+<div class="block">Get the player who was frozen</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html#getFrozenPlayer()">getFrozenPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">UnFreezePlayerEvent</a></dt>
+<dd>
+<div class="block">Get the player who was frozen</div>
+</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/IStaffPlayer.html#getGlowColor()">getGlowColor()</a></span> - Method in interface es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/IStaffPlayer.html" title="interface in es.angelillo15.mast.api">IStaffPlayer</a></dt>
 <dd>
 <div class="block">Get the glow color</div>
 </dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#getHandlerList()">getHandlerList()</a></span> - Static method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#getHandlerList()">getHandlerList()</a></span> - Static method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezePlayerEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">UnFreezePlayerEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffChatTalkEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffDisableEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html#getHandlers()">getHandlers()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffEnableEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/material/XMaterial.html#getId()">getId()</a></span> - Method in enum es.angelillo15.mast.api.material.<a href="es/angelillo15/mast/api/material/XMaterial.html" title="enum in es.angelillo15.mast.api.material">XMaterial</a></dt>
 <dd>
@@ -1672,7 +1706,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get a library from Maven Central or JitPack</div>
 </dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#getMessages()">getMessages()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html#getMessage()">getMessage()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffChatTalkEvent</a></dt>
+<dd>
+<div class="block">Get the staffchat message</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#getMessages()">getMessages()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/cmd/SubCommand.html#getName()">getName()</a></span> - Method in class es.angelillo15.mast.api.cmd.<a href="es/angelillo15/mast/api/cmd/SubCommand.html" title="class in es.angelillo15.mast.api.cmd">SubCommand</a></dt>
 <dd>&nbsp;</dd>
@@ -1690,7 +1728,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/Permissions.html#getPermission()">getPermission()</a></span> - Method in enum es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/Permissions.html" title="enum in es.angelillo15.mast.api">Permissions</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#getPlayer()">getPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#getPlayer()">getPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/IMastPlayer.html#getPlayer()">getPlayer()</a></span> - Method in interface es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/IMastPlayer.html" title="interface in es.angelillo15.mast.api">IMastPlayer</a></dt>
 <dd>
@@ -1708,8 +1746,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get reports</div>
 </dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html#getSender()">getSender()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffChatTalkEvent</a></dt>
+<dd>
+<div class="block">Get the player who sent the message</div>
+</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/items/StaffItem.html#getSlot()">getSlot()</a></span> - Method in class es.angelillo15.mast.api.items.<a href="es/angelillo15/mast/api/items/StaffItem.html" title="class in es.angelillo15.mast.api.items">StaffItem</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html#getStaffPlayer()">getStaffPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffDisableEvent</a></dt>
+<dd>
+<div class="block">Get the staff player who disabled staff mode</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html#getStaffPlayer()">getStaffPlayer()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffEnableEvent</a></dt>
+<dd>
+<div class="block">Get the staff player who enable staff mode</div>
+</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/managers/StaffPlayersManagers.html#getStaffPlayer(java.lang.String)">getStaffPlayer(String)</a></span> - Static method in class es.angelillo15.mast.api.managers.<a href="es/angelillo15/mast/api/managers/StaffPlayersManagers.html" title="class in es.angelillo15.mast.api.managers">StaffPlayersManagers</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/managers/StaffPlayersManagers.html#getStaffPlayer(org.bukkit.entity.Player)">getStaffPlayer(Player)</a></span> - Static method in class es.angelillo15.mast.api.managers.<a href="es/angelillo15/mast/api/managers/StaffPlayersManagers.html" title="class in es.angelillo15.mast.api.managers">StaffPlayersManagers</a></dt>
@@ -2078,7 +2128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Returns whether this component is bold without checking the parents
  setting.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#isCancelled()">isCancelled()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#isCancelled()">isCancelled()</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/MAStaffInstance.html#isDebug()">isDebug()</a></span> - Method in interface es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/MAStaffInstance.html" title="interface in es.angelillo15.mast.api">MAStaffInstance</a></dt>
 <dd>&nbsp;</dd>
@@ -3542,7 +3592,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/chat/api/chat/ItemTag.Serializer.html#%3Cinit%3E()">Serializer()</a></span> - Constructor for class es.angelillo15.mast.api.chat.api.chat.<a href="es/angelillo15/mast/api/chat/api/chat/ItemTag.Serializer.html" title="class in es.angelillo15.mast.api.chat.api.chat">ItemTag.Serializer</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#setCancelled(boolean)">setCancelled(boolean)</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#setCancelled(boolean)">setCancelled(boolean)</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/chat/api/chat/ComponentBuilder.html#setCursor(int)">setCursor(int)</a></span> - Method in class es.angelillo15.mast.api.chat.api.chat.<a href="es/angelillo15/mast/api/chat/api/chat/ComponentBuilder.html" title="class in es.angelillo15.mast.api.chat.api.chat">ComponentBuilder</a></dt>
 <dd>
@@ -3564,7 +3614,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Set staff items to the player</div>
 </dd>
-<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html#setMessages(java.util.ArrayList)">setMessages(ArrayList&lt;String&gt;)</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.<a href="es/angelillo15/mast/api/event/bukkit/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit">FreezeMessageEvent</a></dt>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html#setMessages(java.util.ArrayList)">setMessages(ArrayList&lt;String&gt;)</a></span> - Method in class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/FreezeMessageEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">FreezeMessageEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/IStaffPlayer.html#setStaffMode(boolean,boolean)">setStaffMode(boolean, boolean)</a></span> - Method in interface es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/IStaffPlayer.html" title="interface in es.angelillo15.mast.api">IStaffPlayer</a></dt>
 <dd>&nbsp;</dd>
@@ -3763,6 +3813,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/Permissions.html#STAFF_STAFFCHAT">STAFF_STAFFCHAT</a></span> - es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/Permissions.html" title="enum in es.angelillo15.mast.api">Permissions</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/Permissions.html#STAFF_VANISH_SEE">STAFF_VANISH_SEE</a></span> - es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/Permissions.html" title="enum in es.angelillo15.mast.api">Permissions</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff"><span class="typeNameLink">StaffChatTalkEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/staff/package-summary.html">es.angelillo15.mast.api.event.bukkit.staff</a></dt>
+<dd>
+<div class="block">Event called when a player sends a message to the staffchat</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html#%3Cinit%3E(org.bukkit.entity.Player,java.lang.String)">StaffChatTalkEvent(Player, String)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffChatTalkEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffChatTalkEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff"><span class="typeNameLink">StaffDisableEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/staff/package-summary.html">es.angelillo15.mast.api.event.bukkit.staff</a></dt>
+<dd>
+<div class="block">Event called when a player disables staff mode</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html#%3Cinit%3E(es.angelillo15.mast.api.IStaffPlayer)">StaffDisableEvent(IStaffPlayer)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffDisableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffDisableEvent</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff"><span class="typeNameLink">StaffEnableEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/staff/package-summary.html">es.angelillo15.mast.api.event.bukkit.staff</a></dt>
+<dd>
+<div class="block">Event called when a player enables staff mode</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html#%3Cinit%3E(es.angelillo15.mast.api.IStaffPlayer)">StaffEnableEvent(IStaffPlayer)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.staff.<a href="es/angelillo15/mast/api/event/bukkit/staff/StaffEnableEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.staff">StaffEnableEvent</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="es/angelillo15/mast/api/items/StaffItem.html" title="class in es.angelillo15.mast.api.items"><span class="typeNameLink">StaffItem</span></a> - Class in <a href="es/angelillo15/mast/api/items/package-summary.html">es.angelillo15.mast.api.items</a></dt>
 <dd>&nbsp;</dd>
@@ -4126,6 +4194,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Sets whether the current part is underlined.</div>
 </dd>
+<dt><a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze"><span class="typeNameLink">UnFreezePlayerEvent</span></a> - Class in <a href="es/angelillo15/mast/api/event/bukkit/freeze/package-summary.html">es.angelillo15.mast.api.event.bukkit.freeze</a></dt>
+<dd>
+<div class="block">Event called when a player is unfrozen</div>
+</dd>
+<dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html#%3Cinit%3E(org.bukkit.entity.Player,org.bukkit.entity.Player)">UnFreezePlayerEvent(Player, Player)</a></span> - Constructor for class es.angelillo15.mast.api.event.bukkit.freeze.<a href="es/angelillo15/mast/api/event/bukkit/freeze/UnFreezePlayerEvent.html" title="class in es.angelillo15.mast.api.event.bukkit.freeze">UnFreezePlayerEvent</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/MAStaffInstance.html#unloadDatabase()">unloadDatabase()</a></span> - Method in interface es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/MAStaffInstance.html" title="interface in es.angelillo15.mast.api">MAStaffInstance</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="es/angelillo15/mast/api/MAStaffInstance.html#unregisterCommands()">unregisterCommands()</a></span> - Method in interface es.angelillo15.mast.api.<a href="es/angelillo15/mast/api/MAStaffInstance.html" title="interface in es.angelillo15.mast.api">MAStaffInstance</a></dt>
