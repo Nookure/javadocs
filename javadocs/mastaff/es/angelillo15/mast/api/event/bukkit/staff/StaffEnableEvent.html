@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":9,"i1":10,"i2":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -195,18 +195,23 @@ extends org.bukkit.event.Event</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static org.bukkit.event.HandlerList</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHandlerList()">getHandlerList</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>org.bukkit.event.HandlerList</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHandlers()">getHandlers</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../IStaffPlayer.html" title="interface in es.angelillo15.mast.api">IStaffPlayer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStaffPlayer()">getStaffPlayer</a></span>()</code></th>
 <td class="colLast">
@@ -280,7 +285,7 @@ extends org.bukkit.event.Event</pre>
 <a id="getHandlers()">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getHandlers</h4>
 <pre class="methodSignature">public&nbsp;org.bukkit.event.HandlerList&nbsp;getHandlers()</pre>
@@ -288,6 +293,15 @@ extends org.bukkit.event.Event</pre>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>getHandlers</code>&nbsp;in class&nbsp;<code>org.bukkit.event.Event</code></dd>
 </dl>
+</li>
+</ul>
+<a id="getHandlerList()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getHandlerList</h4>
+<pre class="methodSignature">public static&nbsp;org.bukkit.event.HandlerList&nbsp;getHandlerList()</pre>
 </li>
 </ul>
 </li>
