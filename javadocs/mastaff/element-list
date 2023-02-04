@@ -12,6 +12,8 @@ es.angelillo15.mast.api.database.sql
 es.angelillo15.mast.api.event.bukkit.freeze
 es.angelillo15.mast.api.event.bukkit.staff
 es.angelillo15.mast.api.event.bukkit.staff.server
+es.angelillo15.mast.api.event.bungee.staff
+es.angelillo15.mast.api.event.bungee.staffchat
 es.angelillo15.mast.api.exceptions
 es.angelillo15.mast.api.gui
 es.angelillo15.mast.api.items
