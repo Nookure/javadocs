@@ -1,5 +1,6 @@
 es.angelillo15.mast.api
 es.angelillo15.mast.api.addons
+es.angelillo15.mast.api.addons.bungee
 es.angelillo15.mast.api.addons.config
 es.angelillo15.mast.api.chat.api
 es.angelillo15.mast.api.chat.api.chat
@@ -10,6 +11,7 @@ es.angelillo15.mast.api.database
 es.angelillo15.mast.api.database.sql
 es.angelillo15.mast.api.event.bukkit.freeze
 es.angelillo15.mast.api.event.bukkit.staff
+es.angelillo15.mast.api.event.bukkit.staff.server
 es.angelillo15.mast.api.exceptions
 es.angelillo15.mast.api.gui
 es.angelillo15.mast.api.items
