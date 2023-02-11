@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
+var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -116,14 +116,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <main role="main">
 <div class="header">
 <div class="subTitle"><span class="packageLabelInType">Package</span>&nbsp;<a href="package-summary.html">es.angelillo15.mast.api.player</a></div>
-<h2 title="Interface IMastPlayer" class="title">Interface IMastPlayer</h2>
+<h2 title="Interface IMastPlayer" class="title">Interface IMastPlayer&lt;T&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <hr>
-<pre>public interface <span class="typeNameLabel">IMastPlayer</span></pre>
+<pre>public interface <span class="typeNameLabel">IMastPlayer&lt;T&gt;</span></pre>
 </li>
 </ul>
 </div>
@@ -159,49 +159,56 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="IMastPlayer.html" title="type parameter in IMastPlayer">T</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayer()">getPlayer</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get the player</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="PlayerType.html" title="enum in es.angelillo15.mast.api.player">PlayerType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerType()">getPlayerType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the player's type</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="../report/Report.html" title="class in es.angelillo15.mast.api.report">Report</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReports()">getReports</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get reports</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUUID()">getUUID</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the player's UUID</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeReport(es.angelillo15.mast.api.report.Report)">removeReport</a></span>&#8203;(<a href="../report/Report.html" title="class in es.angelillo15.mast.api.report">Report</a>&nbsp;report)</code></th>
 <td class="colLast">
 <div class="block">Remove a report</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reportPlayer(es.angelillo15.mast.api.player.IMastPlayer,java.lang.String)">reportPlayer</a></span>&#8203;(<a href="IMastPlayer.html" title="interface in es.angelillo15.mast.api.player">IMastPlayer</a>&nbsp;playerToReport,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reportPlayer(es.angelillo15.mast.api.player.IMastPlayer,java.lang.String)">reportPlayer</a></span>&#8203;(<a href="IMastPlayer.html" title="interface in es.angelillo15.mast.api.player">IMastPlayer</a>&lt;<a href="IMastPlayer.html" title="type parameter in IMastPlayer">T</a>&gt;&nbsp;playerToReport,
             java.lang.String&nbsp;reason)</code></th>
 <td class="colLast">
 <div class="block">Report a player</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(java.lang.String)">sendMessage</a></span>&#8203;(java.lang.String&nbsp;message)</code></th>
 <td class="colLast">
 <div class="block">Send a message to the player</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessages(java.lang.String...)">sendMessages</a></span>&#8203;(java.lang.String...&nbsp;message)</code></th>
 <td class="colLast">
@@ -236,6 +243,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>PlayerType</dd>
+</dl>
+</li>
+</ul>
+<a id="getPlayer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPlayer</h4>
+<pre class="methodSignature"><a href="IMastPlayer.html" title="type parameter in IMastPlayer">T</a>&nbsp;getPlayer()</pre>
+<div class="block">Get the player</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>T It can be Player or ProxiedPlayer</dd>
 </dl>
 </li>
 </ul>
@@ -339,7 +360,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockListLast">
 <li class="blockList">
 <h4>reportPlayer</h4>
-<pre class="methodSignature">void&nbsp;reportPlayer&#8203;(<a href="IMastPlayer.html" title="interface in es.angelillo15.mast.api.player">IMastPlayer</a>&nbsp;playerToReport,
+<pre class="methodSignature">void&nbsp;reportPlayer&#8203;(<a href="IMastPlayer.html" title="interface in es.angelillo15.mast.api.player">IMastPlayer</a>&lt;<a href="IMastPlayer.html" title="type parameter in IMastPlayer">T</a>&gt;&nbsp;playerToReport,
                   java.lang.String&nbsp;reason)</pre>
 <div class="block">Report a player</div>
 <dl>
