@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root.dark {
+  background-color: #0A0B10;
+}
+
+.purple-glow-gradient {
+  background: #6445a8;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #7d5cbe 0%,
+    #9673d4 50%,
+    #7d5cbe 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+.red-glow-gradient {
+  background: #cf3030;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #cf3030 0%,
+    #ff6666 50%,
+    #ba5959 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+.blue-glow-gradient {
+  background: #456da8;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #3258aa 0%,
+    #607dbd 50%,
+    #3258aa 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+.green-glow-gradient {
+  background: #27d845;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #43e04b 0%,
+    rgb(18, 150, 88) 50%,
+    #43e04b 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+.pulse {
+  position: relative;
+  z-index: -1;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: pulse 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0 0 80px #6445a8);
+  }
+  50% {
+    filter: drop-shadow(0 0 40px #9673d4);
+  }
+  100% {
+    filter: drop-shadow(0 0 80px #6445a8);
+  }
+}
