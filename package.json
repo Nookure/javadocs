@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "cp -r ./javadocs/* ./public/jd/ && astro check && astro build",
+    "build:cloudflare": "mkdir -p ./public/jd && bun run build",
     "preview": "astro preview",
     "astro": "astro"
   },
