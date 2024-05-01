@@ -51,7 +51,10 @@ loadScripts(document, 'script');</script>
 <span class="package-hierarchy-label">Package Hierarchies:</span>
 <ul class="horizontal">
 <li><a href="com/nookure/staff/package-tree.html">com.nookure.staff</a>, </li>
+<li><a href="com/nookure/staff/ap/addon/package-tree.html">com.nookure.staff.ap.addon</a>, </li>
 <li><a href="com/nookure/staff/api/package-tree.html">com.nookure.staff.api</a>, </li>
+<li><a href="com/nookure/staff/api/addons/package-tree.html">com.nookure.staff.api.addons</a>, </li>
+<li><a href="com/nookure/staff/api/addons/annotations/package-tree.html">com.nookure.staff.api.addons.annotations</a>, </li>
 <li><a href="com/nookure/staff/api/annotation/package-tree.html">com.nookure.staff.api.annotation</a>, </li>
 <li><a href="com/nookure/staff/api/command/package-tree.html">com.nookure.staff.api.command</a>, </li>
 <li><a href="com/nookure/staff/api/config/package-tree.html">com.nookure.staff.api.config</a>, </li>
@@ -64,6 +67,7 @@ loadScripts(document, 'script');</script>
 <li><a href="com/nookure/staff/api/config/velocity/package-tree.html">com.nookure.staff.api.config.velocity</a>, </li>
 <li><a href="com/nookure/staff/api/database/package-tree.html">com.nookure.staff.api.database</a>, </li>
 <li><a href="com/nookure/staff/api/event/package-tree.html">com.nookure.staff.api.event</a>, </li>
+<li><a href="com/nookure/staff/api/event/addon/package-tree.html">com.nookure.staff.api.event.addon</a>, </li>
 <li><a href="com/nookure/staff/api/event/server/package-tree.html">com.nookure.staff.api.event.server</a>, </li>
 <li><a href="com/nookure/staff/api/event/staff/package-tree.html">com.nookure.staff.api.event.staff</a>, </li>
 <li><a href="com/nookure/staff/api/exception/package-tree.html">com.nookure.staff.api.exception</a>, </li>
@@ -81,12 +85,21 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" class="type-name-link external-link" title="class or interface in java.lang">Object</a>
 <ul>
-<li class="circle">com.google.inject.AbstractModule (implements com.google.inject.Module)
+<li class="circle">com.google.inject.<a href="https://google.github.io/guice/api-docs/7.0.0/javadoc/com/google/inject/AbstractModule.html" class="type-name-link external-link" title="class or interface in com.google.inject">AbstractModule</a> (implements com.google.inject.<a href="https://google.github.io/guice/api-docs/7.0.0/javadoc/com/google/inject/Module.html" title="class or interface in com.google.inject" class="external-link">Module</a>)
 <ul>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/PluginModule.html" class="type-name-link" title="class in com.nookure.staff.api.util">PluginModule</a></li>
 </ul>
 </li>
 <li class="circle">com.nookure.staff.api.database.<a href="com/nookure/staff/api/database/AbstractPluginConnection.html" class="type-name-link" title="class in com.nookure.staff.api.database">AbstractPluginConnection</a></li>
+<li class="circle">javax.annotation.processing.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html" class="type-name-link external-link" title="class or interface in javax.annotation.processing">AbstractProcessor</a> (implements javax.annotation.processing.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.compiler/javax/annotation/processing/Processor.html" title="class or interface in javax.annotation.processing" class="external-link">Processor</a>)
+<ul>
+<li class="circle">com.nookure.staff.ap.addon.<a href="com/nookure/staff/ap/addon/AddonAnnotationProcessor.html" class="type-name-link" title="class in com.nookure.staff.ap.addon">AddonAnnotationProcessor</a></li>
+</ul>
+</li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonDescription.html" class="type-name-link" title="class in com.nookure.staff.api.addons">AddonDescription</a></li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonDescriptionBuilder.html" class="type-name-link" title="class in com.nookure.staff.api.addons">AddonDescriptionBuilder</a></li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonLogger.html" class="type-name-link" title="class in com.nookure.staff.api.addons">AddonLogger</a> (implements com.nookure.staff.api.<a href="com/nookure/staff/api/Logger.html" title="interface in com.nookure.staff.api">Logger</a>)</li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonsUtils.html" class="type-name-link" title="class in com.nookure.staff.api.addons">AddonsUtils</a></li>
 <li class="circle">com.nookure.staff.api.config.bukkit.<a href="com/nookure/staff/api/config/bukkit/BukkitConfig.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit">BukkitConfig</a></li>
 <li class="circle">com.nookure.staff.api.config.bukkit.<a href="com/nookure/staff/api/config/bukkit/BukkitMessages.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit">BukkitMessages</a></li>
 <li class="circle">com.nookure.staff.api.messaging.<a href="com/nookure/staff/api/messaging/Channels.html" class="type-name-link" title="class in com.nookure.staff.api.messaging">Channels</a></li>
@@ -122,6 +135,9 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/PluginMessageManager.html" class="type-name-link" title="class in com.nookure.staff.api.event">PluginMessageManager</a>&lt;P&gt;</li>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html" class="type-name-link external-link" title="class or interface in java.lang">Record</a>
 <ul>
+<li class="circle">com.nookure.staff.api.event.addon.<a href="com/nookure/staff/api/event/addon/AddonDisableEvent.html" class="type-name-link" title="class in com.nookure.staff.api.event.addon">AddonDisableEvent</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
+<li class="circle">com.nookure.staff.api.event.addon.<a href="com/nookure/staff/api/event/addon/AddonEnableEvent.html" class="type-name-link" title="class in com.nookure.staff.api.event.addon">AddonEnableEvent</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
+<li class="circle">com.nookure.staff.api.event.addon.<a href="com/nookure/staff/api/event/addon/AddonReloadEvent.html" class="type-name-link" title="class in com.nookure.staff.api.event.addon">AddonReloadEvent</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
 <li class="circle">com.nookure.staff.api.event.server.<a href="com/nookure/staff/api/event/server/BroadcastMessage.html" class="type-name-link" title="class in com.nookure.staff.api.event.server">BroadcastMessage</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
 <li class="circle">com.nookure.staff.api.event.server.<a href="com/nookure/staff/api/event/server/BroadcastMessageExcept.html" class="type-name-link" title="class in com.nookure.staff.api.event.server">BroadcastMessageExcept</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
 <li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventVector.html" class="type-name-link" title="class in com.nookure.staff.api.event">EventVector</a></li>
@@ -152,6 +168,7 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html" class="type-name-link external-link" title="class or interface in java.lang">RuntimeException</a>
 <ul>
+<li class="circle">com.nookure.staff.api.exception.<a href="com/nookure/staff/api/exception/AddonException.html" class="type-name-link" title="class in com.nookure.staff.api.exception">AddonException</a></li>
 <li class="circle">com.nookure.staff.api.exception.<a href="com/nookure/staff/api/exception/EventHandlerException.html" class="type-name-link" title="class in com.nookure.staff.api.exception">EventHandlerException</a></li>
 <li class="circle">com.nookure.staff.api.exception.<a href="com/nookure/staff/api/exception/ItemNotFoundException.html" class="type-name-link" title="class in com.nookure.staff.api.exception">ItemNotFoundException</a></li>
 </ul>
@@ -170,6 +187,10 @@ loadScripts(document, 'script');</script>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/AbstractLoader.html" class="type-name-link" title="interface in com.nookure.staff.api.util">AbstractLoader</a></li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonActions.html" class="type-name-link" title="interface in com.nookure.staff.api.addons">AddonActions</a></li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonContainer.html" class="type-name-link" title="interface in com.nookure.staff.api.addons">AddonContainer</a></li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonManager.html" class="type-name-link" title="interface in com.nookure.staff.api.addons">AddonManager</a></li>
+<li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Cancelable.html" class="type-name-link" title="interface in com.nookure.staff.api.event">Cancelable</a></li>
 <li class="circle">com.nookure.staff.api.command.<a href="com/nookure/staff/api/command/CommandSender.html" class="type-name-link" title="interface in com.nookure.staff.api.command">CommandSender</a>
 <ul>
 <li class="circle">com.nookure.staff.api.<a href="com/nookure/staff/api/PlayerWrapper.html" class="type-name-link" title="interface in com.nookure.staff.api">PlayerWrapper</a> (also extends java.io.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a>)
@@ -203,6 +224,9 @@ loadScripts(document, 'script');</script>
 <section class="hierarchy">
 <h2 title="Annotation Interface Hierarchy">Annotation Interface Hierarchy</h2>
 <ul>
+<li class="circle">com.nookure.staff.api.addons.annotations.<a href="com/nookure/staff/api/addons/annotations/Addon.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.addons.annotations">Addon</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
+<li class="circle">com.nookure.staff.api.addons.annotations.<a href="com/nookure/staff/api/addons/annotations/AddonDataFolder.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.addons.annotations">AddonDataFolder</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
+<li class="circle">com.nookure.staff.api.addons.annotations.<a href="com/nookure/staff/api/addons/annotations/AddonLogger.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.addons.annotations">AddonLogger</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
 <li class="circle">com.nookure.staff.api.command.<a href="com/nookure/staff/api/command/CommandData.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.command">CommandData</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
 <li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/NookSubscribe.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
 <li class="circle">com.nookure.staff.api.placeholder.<a href="com/nookure/staff/api/placeholder/PlaceholderData.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.placeholder">PlaceholderData</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
@@ -218,6 +242,8 @@ loadScripts(document, 'script');</script>
 <ul>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html" class="type-name-link external-link" title="class or interface in java.lang">Enum</a>&lt;E&gt; (implements java.lang.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html" title="class or interface in java.lang" class="external-link">Comparable</a>&lt;T&gt;, java.lang.constant.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/constant/Constable.html" title="class or interface in java.lang.constant" class="external-link">Constable</a>, java.io.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a>)
 <ul>
+<li class="circle">com.nookure.staff.api.addons.annotations.<a href="com/nookure/staff/api/addons/annotations/Addon.AddonPlatform.html" class="type-name-link" title="enum class in com.nookure.staff.api.addons.annotations">Addon.AddonPlatform</a></li>
+<li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonStatus.html" class="type-name-link" title="enum class in com.nookure.staff.api.addons">AddonStatus</a></li>
 <li class="circle">com.nookure.staff.api.database.<a href="com/nookure/staff/api/database/DataProvider.html" class="type-name-link" title="enum class in com.nookure.staff.api.database">DataProvider</a></li>
 <li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventPriority.html" class="type-name-link" title="enum class in com.nookure.staff.api.event">EventPriority</a></li>
 <li class="circle">com.nookure.staff.api.item.<a href="com/nookure/staff/api/item/Items.html" class="type-name-link" title="enum class in com.nookure.staff.api.item">Items</a></li>
