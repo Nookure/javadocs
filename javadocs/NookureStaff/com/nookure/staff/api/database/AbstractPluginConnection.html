@@ -78,7 +78,7 @@ loadScripts(document, 'script');</script>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name type-name-label">AbstractPluginConnection</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span></div>
 <div class="block">This class represents a connection to the database.
- Use <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig)"><code>connect(DatabaseConfig)</code></a> to connect to the database.</div>
+ Use <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)"><code>connect(DatabaseConfig, ClassLoader)</code></a> to connect to the database.</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -106,13 +106,14 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract void</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#close()" class="member-name-link">close</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Closes the connection to the database.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig)" class="member-name-link">connect</a><wbr>(@NotNull <a href="../config/partials/DatabaseConfig.html" title="class in com.nookure.staff.api.config.partials">DatabaseConfig</a>&nbsp;config)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)" class="member-name-link">connect</a><wbr>(@NotNull <a href="../config/partials/DatabaseConfig.html" title="class in com.nookure.staff.api.config.partials">DatabaseConfig</a>&nbsp;config,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html" title="class or interface in java.lang" class="external-link">ClassLoader</a>&nbsp;classLoader)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Connects to the database.</div>
 </div>
@@ -121,10 +122,21 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the connection to the database.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract @NotNull com.craftmend.storm.Storm</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getStorm()" class="member-name-link">getStorm</a>()</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract io.ebean.Database</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getEbeanDatabase()" class="member-name-link">getEbeanDatabase</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Returns the Ebean database.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract @NotNull com.craftmend.storm.Storm</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getStorm()" class="member-name-link">getStorm</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns the Storm instance.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>abstract void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#reload(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)" class="member-name-link">reload</a><wbr>(@NotNull <a href="../config/partials/DatabaseConfig.html" title="class in com.nookure.staff.api.config.partials">DatabaseConfig</a>&nbsp;config,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html" title="class or interface in java.lang" class="external-link">ClassLoader</a>&nbsp;classLoader)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Reloads the connection to the database.</div>
 </div>
 </div>
 </div>
@@ -158,10 +170,11 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="connect(com.nookure.staff.api.config.partials.DatabaseConfig)">
+<section class="detail" id="connect(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)">
 <h3>connect</h3>
 <div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">connect</span><wbr><span class="parameters">(@NotNull
- @NotNull <a href="../config/partials/DatabaseConfig.html" title="class in com.nookure.staff.api.config.partials">DatabaseConfig</a>&nbsp;config)</span></div>
+ @NotNull <a href="../config/partials/DatabaseConfig.html" title="class in com.nookure.staff.api.config.partials">DatabaseConfig</a>&nbsp;config,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html" title="class or interface in java.lang" class="external-link">ClassLoader</a>&nbsp;classLoader)</span></div>
 <div class="block">Connects to the database.
  <p>
  This method should be called before any other method.
@@ -187,7 +200,7 @@ loadScripts(document, 'script');</script>
 <li>
 <section class="detail" id="close()">
 <h3>close</h3>
-<div class="member-signature"><span class="modifiers">protected abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">close</span>()</div>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">close</span>()</div>
 <div class="block">Closes the connection to the database.
 
  <p>
@@ -202,7 +215,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">@NotNull com.craftmend.storm.Storm</span>&nbsp;<span class="element-name">getStorm</span>()</div>
 <div class="block">Returns the Storm instance.
- This should be called after <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig)"><code>connect(DatabaseConfig)</code></a>.
+ This should be called after <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)"><code>connect(DatabaseConfig, ClassLoader)</code></a>.
  <p>
  If the connection is not established, this method should throw an exception.
  If the connection is established, this method should return the Storm instance.
@@ -219,7 +232,7 @@ loadScripts(document, 'script');</script>
 <div class="member-signature"><span class="annotations">@NotNull
 </span><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html" title="class or interface in java.sql" class="external-link">Connection</a></span>&nbsp;<span class="element-name">getConnection</span>()</div>
 <div class="block">Returns the connection to the database.
- this should be called after <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig)"><code>connect(DatabaseConfig)</code></a>.
+ this should be called after <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)"><code>connect(DatabaseConfig, ClassLoader)</code></a>.
  <p>
  If the connection is not established, this method should throw an exception.
  If the connection is established, this method should return the connection.
@@ -227,6 +240,37 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the connection to the database</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getEbeanDatabase()">
+<h3>getEbeanDatabase</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">io.ebean.Database</span>&nbsp;<span class="element-name">getEbeanDatabase</span>()</div>
+<div class="block">Returns the Ebean database.
+ This should be called after <a href="#connect(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)"><code>connect(DatabaseConfig, ClassLoader)</code></a>.
+ <p>
+ If the connection is not established, this method should throw an exception.
+ If the connection is established, this method should return the Ebean database.
+ </p></div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the Ebean database</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="reload(com.nookure.staff.api.config.partials.DatabaseConfig,java.lang.ClassLoader)">
+<h3>reload</h3>
+<div class="member-signature"><span class="modifiers">public abstract</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">reload</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="../config/partials/DatabaseConfig.html" title="class in com.nookure.staff.api.config.partials">DatabaseConfig</a>&nbsp;config,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ClassLoader.html" title="class or interface in java.lang" class="external-link">ClassLoader</a>&nbsp;classLoader)</span></div>
+<div class="block">Reloads the connection to the database.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>config</code> - the database config</dd>
+<dd><code>classLoader</code> - the class loader</dd>
 </dl>
 </section>
 </li>
