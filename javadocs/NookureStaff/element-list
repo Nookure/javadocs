@@ -8,6 +8,7 @@ com.nookure.staff.api.command
 com.nookure.staff.api.config
 com.nookure.staff.api.config.bukkit
 com.nookure.staff.api.config.bukkit.partials
+com.nookure.staff.api.config.bukkit.partials.config
 com.nookure.staff.api.config.bukkit.partials.messages
 com.nookure.staff.api.config.bukkit.partials.messages.note
 com.nookure.staff.api.config.bukkit.ui
