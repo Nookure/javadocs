@@ -82,6 +82,7 @@ loadScripts(document, 'script');</script>
 <li><a href="com/nookure/staff/api/placeholder/package-tree.html">com.nookure.staff.api.placeholder</a>, </li>
 <li><a href="com/nookure/staff/api/proto/package-tree.html">com.nookure.staff.api.proto</a>, </li>
 <li><a href="com/nookure/staff/api/service/package-tree.html">com.nookure.staff.api.service</a>, </li>
+<li><a href="com/nookure/staff/api/state/package-tree.html">com.nookure.staff.api.state</a>, </li>
 <li><a href="com/nookure/staff/api/util/package-tree.html">com.nookure.staff.api.util</a></li>
 </ul>
 <section class="hierarchy">
@@ -162,6 +163,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.model.<a href="com/nookure/staff/api/model/PlayerModel.html" class="type-name-link" title="class in com.nookure.staff.api.model">PlayerModel</a> (implements com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/Object2Text.html" title="interface in com.nookure.staff.api.util">Object2Text</a>)</li>
 </ul>
 </li>
+<li class="circle">com.nookure.staff.api.model.<a href="com/nookure/staff/api/model/PinModel.html" class="type-name-link" title="class in com.nookure.staff.api.model">PinModel</a></li>
 </ul>
 </li>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.config.<a href="com/nookure/staff/api/config/bukkit/partials/config/ModulesPartials.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.config">ModulesPartials</a></li>
@@ -169,11 +171,17 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.messages.note.<a href="com/nookure/staff/api/config/bukkit/partials/messages/note/NoteMessages.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.messages.note">NoteMessages</a></li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/NumberUtils.html" class="type-name-link" title="class in com.nookure.staff.api.util">NumberUtils</a></li>
 <li class="circle">com.nookure.staff.api.<a href="com/nookure/staff/api/Permissions.html" class="type-name-link" title="class in com.nookure.staff.api">Permissions</a></li>
+<li class="circle">com.nookure.staff.api.config.bukkit.partials.messages.<a href="com/nookure/staff/api/config/bukkit/partials/messages/PinMessagePartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.messages">PinMessagePartial</a></li>
 <li class="circle">com.nookure.staff.api.placeholder.<a href="com/nookure/staff/api/placeholder/Placeholder.html" class="type-name-link" title="class in com.nookure.staff.api.placeholder">Placeholder</a></li>
 <li class="circle">com.nookure.staff.api.placeholder.<a href="com/nookure/staff/api/placeholder/PlaceholderManager.html" class="type-name-link" title="class in com.nookure.staff.api.placeholder">PlaceholderManager</a></li>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.messages.<a href="com/nookure/staff/api/config/bukkit/partials/messages/PlaceholderPartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.messages">PlaceholderPartial</a></li>
 <li class="circle">com.nookure.staff.api.proto.<a href="com/nookure/staff/api/proto/Player.html" class="type-name-link" title="class in com.nookure.staff.api.proto">Player</a></li>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.config.<a href="com/nookure/staff/api/config/bukkit/partials/config/PlayerActions.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.config">PlayerActions</a></li>
+<li class="circle">com.nookure.staff.api.state.<a href="com/nookure/staff/api/state/PlayerState.html" class="type-name-link" title="class in com.nookure.staff.api.state">PlayerState</a>
+<ul>
+<li class="circle">com.nookure.staff.api.state.<a href="com/nookure/staff/api/state/PinState.html" class="type-name-link" title="class in com.nookure.staff.api.state">PinState</a></li>
+</ul>
+</li>
 <li class="circle">com.nookure.staff.api.manager.<a href="com/nookure/staff/api/manager/PlayerWrapperManager.html" class="type-name-link" title="class in com.nookure.staff.api.manager">PlayerWrapperManager</a>&lt;T&gt;</li>
 <li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/PluginMessageManager.html" class="type-name-link" title="class in com.nookure.staff.api.event">PluginMessageManager</a>&lt;P&gt;</li>
 <li class="circle">com.nookure.staff.api.config.messaging.<a href="com/nookure/staff/api/config/messaging/RedisPartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.messaging">RedisPartial</a></li>
@@ -214,6 +222,7 @@ loadScripts(document, 'script');</script>
 </li>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.messages.<a href="com/nookure/staff/api/config/bukkit/partials/messages/VanishPartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.messages">VanishPartial</a></li>
 <li class="circle">com.nookure.staff.api.config.velocity.<a href="com/nookure/staff/api/config/velocity/VelocityConfig.html" class="type-name-link" title="class in com.nookure.staff.api.config.velocity">VelocityConfig</a></li>
+<li class="circle">com.nookure.staff.api.state.<a href="com/nookure/staff/api/state/WrapperState.html" class="type-name-link" title="class in com.nookure.staff.api.state">WrapperState</a></li>
 </ul>
 </li>
 </ul>
@@ -252,6 +261,7 @@ loadScripts(document, 'script');</script>
 </ul>
 </li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/Object2Text.html" class="type-name-link" title="interface in com.nookure.staff.api.util">Object2Text</a></li>
+<li class="circle">com.nookure.staff.api.service.<a href="com/nookure/staff/api/service/PinUserService.html" class="type-name-link" title="interface in com.nookure.staff.api.service">PinUserService</a></li>
 <li class="circle">com.nookure.staff.api.item.<a href="com/nookure/staff/api/item/PlayerInteractItem.html" class="type-name-link" title="interface in com.nookure.staff.api.item">PlayerInteractItem</a></li>
 <li class="circle">java.io.<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html" class="type-name-link external-link" title="class or interface in java.io">Serializable</a>
 <ul>
@@ -290,6 +300,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.addons.annotations.<a href="com/nookure/staff/api/addons/annotations/Addon.AddonPlatform.html" class="type-name-link" title="enum class in com.nookure.staff.api.addons.annotations">Addon.AddonPlatform</a></li>
 <li class="circle">com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonStatus.html" class="type-name-link" title="enum class in com.nookure.staff.api.addons">AddonStatus</a></li>
 <li class="circle">com.nookure.staff.api.database.<a href="com/nookure/staff/api/database/DataProvider.html" class="type-name-link" title="enum class in com.nookure.staff.api.database">DataProvider</a></li>
+<li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/DefaultFontInfo.html" class="type-name-link" title="enum class in com.nookure.staff.api.util">DefaultFontInfo</a></li>
 <li class="circle">com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventPriority.html" class="type-name-link" title="enum class in com.nookure.staff.api.event">EventPriority</a></li>
 <li class="circle">com.nookure.staff.api.item.<a href="com/nookure/staff/api/item/Items.html" class="type-name-link" title="enum class in com.nookure.staff.api.item">Items</a></li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/JarUtil.CopyOption.html" class="type-name-link" title="enum class in com.nookure.staff.api.util">JarUtil.CopyOption</a></li>

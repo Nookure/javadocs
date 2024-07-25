@@ -29,4 +29,5 @@ com.nookure.staff.api.model
 com.nookure.staff.api.placeholder
 com.nookure.staff.api.proto
 com.nookure.staff.api.service
+com.nookure.staff.api.state
 com.nookure.staff.api.util
