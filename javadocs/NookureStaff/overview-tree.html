@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="script-dir/jquery-ui.min.css" title="Style">
 <script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="script-dir/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="script-dir/jquery-ui.min.js"></script>
 </head>
 <body class="tree-page">
@@ -57,6 +57,7 @@ loadScripts(document, 'script');</script>
 <li><a href="com/nookure/staff/api/addons/package-tree.html">com.nookure.staff.api.addons</a>, </li>
 <li><a href="com/nookure/staff/api/addons/annotations/package-tree.html">com.nookure.staff.api.addons.annotations</a>, </li>
 <li><a href="com/nookure/staff/api/annotation/package-tree.html">com.nookure.staff.api.annotation</a>, </li>
+<li><a href="com/nookure/staff/api/annotation/staff/package-tree.html">com.nookure.staff.api.annotation.staff</a>, </li>
 <li><a href="com/nookure/staff/api/command/package-tree.html">com.nookure.staff.api.command</a>, </li>
 <li><a href="com/nookure/staff/api/config/package-tree.html">com.nookure.staff.api.config</a>, </li>
 <li><a href="com/nookure/staff/api/config/bukkit/package-tree.html">com.nookure.staff.api.config.bukkit</a>, </li>
@@ -69,12 +70,16 @@ loadScripts(document, 'script');</script>
 <li><a href="com/nookure/staff/api/config/partials/package-tree.html">com.nookure.staff.api.config.partials</a>, </li>
 <li><a href="com/nookure/staff/api/config/velocity/package-tree.html">com.nookure.staff.api.config.velocity</a>, </li>
 <li><a href="com/nookure/staff/api/database/package-tree.html">com.nookure.staff.api.database</a>, </li>
+<li><a href="com/nookure/staff/api/database/model/package-tree.html">com.nookure.staff.api.database.model</a>, </li>
+<li><a href="com/nookure/staff/api/database/repository/package-tree.html">com.nookure.staff.api.database.repository</a>, </li>
+<li><a href="com/nookure/staff/api/database/util/package-tree.html">com.nookure.staff.api.database.util</a>, </li>
 <li><a href="com/nookure/staff/api/event/package-tree.html">com.nookure.staff.api.event</a>, </li>
 <li><a href="com/nookure/staff/api/event/addon/package-tree.html">com.nookure.staff.api.event.addon</a>, </li>
 <li><a href="com/nookure/staff/api/event/server/package-tree.html">com.nookure.staff.api.event.server</a>, </li>
 <li><a href="com/nookure/staff/api/event/staff/package-tree.html">com.nookure.staff.api.event.staff</a>, </li>
 <li><a href="com/nookure/staff/api/exception/package-tree.html">com.nookure.staff.api.exception</a>, </li>
 <li><a href="com/nookure/staff/api/extension/package-tree.html">com.nookure.staff.api.extension</a>, </li>
+<li><a href="com/nookure/staff/api/extension/staff/package-tree.html">com.nookure.staff.api.extension.staff</a>, </li>
 <li><a href="com/nookure/staff/api/item/package-tree.html">com.nookure.staff.api.item</a>, </li>
 <li><a href="com/nookure/staff/api/manager/package-tree.html">com.nookure.staff.api.manager</a>, </li>
 <li><a href="com/nookure/staff/api/messaging/package-tree.html">com.nookure.staff.api.messaging</a>, </li>
@@ -155,6 +160,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/JarUtil.html" class="type-name-link" title="class in com.nookure.staff.api.util">JarUtil</a></li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/LocationWrapper.html" class="type-name-link" title="class in com.nookure.staff.api.util">LocationWrapper</a> (implements java.io.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a>)</li>
 <li class="circle">com.nookure.staff.api.config.messaging.<a href="com/nookure/staff/api/config/messaging/MessengerConfig.html" class="type-name-link" title="class in com.nookure.staff.api.config.messaging">MessengerConfig</a></li>
+<li class="circle">com.nookure.staff.api.database.util.<a href="com/nookure/staff/api/database/util/MigrationUtil.html" class="type-name-link" title="class in com.nookure.staff.api.database.util">MigrationUtil</a></li>
 <li class="circle">io.ebean.Model
 <ul>
 <li class="circle">com.nookure.staff.api.model.<a href="com/nookure/staff/api/model/BaseDomain.html" class="type-name-link" title="class in com.nookure.staff.api.model">BaseDomain</a>
@@ -187,6 +193,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.config.messaging.<a href="com/nookure/staff/api/config/messaging/RedisPartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.messaging">RedisPartial</a></li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/Scheduler.html" class="type-name-link" title="class in com.nookure.staff.api.util">Scheduler</a></li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/ServerUtils.html" class="type-name-link" title="class in com.nookure.staff.api.util">ServerUtils</a></li>
+<li class="circle">com.nookure.staff.api.config.bukkit.partials.config.<a href="com/nookure/staff/api/config/bukkit/partials/config/StaffChatPartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.config">StaffChatPartial</a></li>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.messages.<a href="com/nookure/staff/api/config/bukkit/partials/messages/StaffChatPartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.messages">StaffChatPartial</a></li>
 <li class="circle">com.nookure.staff.api.item.<a href="com/nookure/staff/api/item/StaffItem.html" class="type-name-link" title="class in com.nookure.staff.api.item">StaffItem</a></li>
 <li class="circle">com.nookure.staff.api.manager.<a href="com/nookure/staff/api/manager/StaffItemsManager.html" class="type-name-link" title="class in com.nookure.staff.api.manager">StaffItemsManager</a></li>
@@ -195,15 +202,12 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.config.bukkit.partials.messages.<a href="com/nookure/staff/api/config/bukkit/partials/messages/StaffModePartial.html" class="type-name-link" title="class in com.nookure.staff.api.config.bukkit.partials.messages">StaffModePartial</a></li>
 <li class="circle">com.nookure.staff.api.extension.<a href="com/nookure/staff/api/extension/StaffPlayerExtension.html" class="type-name-link" title="class in com.nookure.staff.api.extension">StaffPlayerExtension</a>
 <ul>
+<li class="circle">com.nookure.staff.api.extension.staff.<a href="com/nookure/staff/api/extension/staff/StaffModeExtension.html" class="type-name-link" title="class in com.nookure.staff.api.extension.staff">StaffModeExtension</a></li>
 <li class="circle">com.nookure.staff.api.extension.<a href="com/nookure/staff/api/extension/VanishExtension.html" class="type-name-link" title="class in com.nookure.staff.api.extension">VanishExtension</a></li>
 </ul>
 </li>
 <li class="circle">com.nookure.staff.api.extension.<a href="com/nookure/staff/api/extension/StaffPlayerExtensionManager.html" class="type-name-link" title="class in com.nookure.staff.api.extension">StaffPlayerExtensionManager</a></li>
-<li class="circle">com.craftmend.storm.api.StormModel
-<ul>
-<li class="circle">com.nookure.staff.api.model.<a href="com/nookure/staff/api/model/StaffDataModel.html" class="type-name-link" title="class in com.nookure.staff.api.model">StaffDataModel</a></li>
-</ul>
-</li>
+<li class="circle">com.nookure.staff.api.database.model.<a href="com/nookure/staff/api/database/model/StaffStateModel.Builder.html" class="type-name-link" title="class in com.nookure.staff.api.database.model">StaffStateModel.Builder</a></li>
 <li class="circle">com.nookure.staff.api.util.<a href="com/nookure/staff/api/util/TextUtils.html" class="type-name-link" title="class in com.nookure.staff.api.util">TextUtils</a></li>
 <li class="circle">java.lang.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Throwable.html" class="type-name-link external-link" title="class or interface in java.lang">Throwable</a> (implements java.io.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a>)
 <ul>
@@ -273,6 +277,7 @@ loadScripts(document, 'script');</script>
 </li>
 </ul>
 </li>
+<li class="circle">com.nookure.staff.api.database.repository.<a href="com/nookure/staff/api/database/repository/StaffStateRepository.html" class="type-name-link" title="interface in com.nookure.staff.api.database.repository">StaffStateRepository</a></li>
 <li class="circle">com.nookure.staff.api.service.<a href="com/nookure/staff/api/service/UserNoteService.html" class="type-name-link" title="interface in com.nookure.staff.api.service">UserNoteService</a></li>
 </ul>
 </section>
@@ -288,6 +293,8 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.annotation.<a href="com/nookure/staff/api/annotation/PluginMessageMessenger.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.annotation">PluginMessageMessenger</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
 <li class="circle">com.nookure.staff.api.annotation.<a href="com/nookure/staff/api/annotation/RedisPublish.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.annotation">RedisPublish</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
 <li class="circle">com.nookure.staff.api.annotation.<a href="com/nookure/staff/api/annotation/RedisSubscribe.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.annotation">RedisSubscribe</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
+<li class="circle">com.nookure.staff.api.annotation.staff.<a href="com/nookure/staff/api/annotation/staff/StaffChatAsDefaultBool.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.annotation.staff">StaffChatAsDefaultBool</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
+<li class="circle">com.nookure.staff.api.annotation.staff.<a href="com/nookure/staff/api/annotation/staff/StaffModeBool.html" class="type-name-link" title="annotation interface in com.nookure.staff.api.annotation.staff">StaffModeBool</a> (implements java.lang.annotation.<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation" class="external-link">Annotation</a>)</li>
 </ul>
 </section>
 <section class="hierarchy">
@@ -330,6 +337,7 @@ loadScripts(document, 'script');</script>
 <li class="circle">com.nookure.staff.api.event.staff.<a href="com/nookure/staff/api/event/staff/StaffModeDisabledEvent.html" class="type-name-link" title="class in com.nookure.staff.api.event.staff">StaffModeDisabledEvent</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
 <li class="circle">com.nookure.staff.api.event.staff.<a href="com/nookure/staff/api/event/staff/StaffModeEnabledEvent.html" class="type-name-link" title="class in com.nookure.staff.api.event.staff">StaffModeEnabledEvent</a> (implements com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/Event.html" title="interface in com.nookure.staff.api.event">Event</a>)</li>
 <li class="circle">com.nookure.staff.api.extension.<a href="com/nookure/staff/api/extension/StaffPlayerExtensionManager.Extension.html" class="type-name-link" title="class in com.nookure.staff.api.extension">StaffPlayerExtensionManager.Extension</a></li>
+<li class="circle">com.nookure.staff.api.database.model.<a href="com/nookure/staff/api/database/model/StaffStateModel.html" class="type-name-link" title="class in com.nookure.staff.api.database.model">StaffStateModel</a></li>
 </ul>
 </li>
 </ul>

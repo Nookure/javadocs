@@ -4,6 +4,7 @@ com.nookure.staff.api
 com.nookure.staff.api.addons
 com.nookure.staff.api.addons.annotations
 com.nookure.staff.api.annotation
+com.nookure.staff.api.annotation.staff
 com.nookure.staff.api.command
 com.nookure.staff.api.config
 com.nookure.staff.api.config.bukkit
@@ -16,12 +17,16 @@ com.nookure.staff.api.config.messaging
 com.nookure.staff.api.config.partials
 com.nookure.staff.api.config.velocity
 com.nookure.staff.api.database
+com.nookure.staff.api.database.model
+com.nookure.staff.api.database.repository
+com.nookure.staff.api.database.util
 com.nookure.staff.api.event
 com.nookure.staff.api.event.addon
 com.nookure.staff.api.event.server
 com.nookure.staff.api.event.staff
 com.nookure.staff.api.exception
 com.nookure.staff.api.extension
+com.nookure.staff.api.extension.staff
 com.nookure.staff.api.item
 com.nookure.staff.api.manager
 com.nookure.staff.api.messaging

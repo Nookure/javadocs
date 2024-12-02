@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
 <link rel="stylesheet" type="text/css" href="../../../../../../script-dir/jquery-ui.min.css" title="Style">
 <script type="text/javascript" src="../../../../../../script.js"></script>
-<script type="text/javascript" src="../../../../../../script-dir/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../../../../../script-dir/jquery-3.7.1.min.js"></script>
 <script type="text/javascript" src="../../../../../../script-dir/jquery-ui.min.js"></script>
 </head>
 <body class="class-declaration-page">
@@ -95,7 +95,7 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../Event.html" title="interface in com.nookure.staff.api.event">Event</a></code>, <code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html" title="class or interface in java.io" class="external-link">Serializable</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">BroadcastMessage</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message, @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">BroadcastMessage</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message, @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission, boolean&nbsp;showInConsole)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a>
 implements <a href="../Event.html" title="interface in com.nookure.staff.api.event">Event</a></span></div>
 <dl class="notes">
@@ -121,7 +121,11 @@ implements <a href="../Event.html" title="interface in com.nookure.staff.api.eve
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String)" class="member-name-link">BroadcastMessage</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission)</code></div>
-<div class="col-last odd-row-color">
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String,boolean)" class="member-name-link">BroadcastMessage</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission,
+ boolean&nbsp;showInConsole)</code></div>
+<div class="col-last even-row-color">
 <div class="block">Creates an instance of a <code>BroadcastMessage</code> record class.</div>
 </div>
 </div>
@@ -158,9 +162,14 @@ implements <a href="../Event.html" title="interface in com.nookure.staff.api.eve
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns the value of the <code>permission</code> record component.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#showInConsole()" class="member-name-link">showInConsole</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>showInConsole</code> record component.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>final <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a string representation of this record class.</div>
 </div>
 </div>
@@ -194,11 +203,22 @@ implements <a href="../Event.html" title="interface in com.nookure.staff.api.eve
  @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.String,boolean)">
+<h3>BroadcastMessage</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">BroadcastMessage</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ @NotNull
+ @NotNull <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;permission,
+ boolean&nbsp;showInConsole)</span></div>
 <div class="block">Creates an instance of a <code>BroadcastMessage</code> record class.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>message</code> - the value for the <code>message</code> record component</dd>
 <dd><code>permission</code> - the value for the <code>permission</code> record component</dd>
+<dd><code>showInConsole</code> - the value for the <code>showInConsole</code> record component</dd>
 </dl>
 </section>
 </li>
@@ -240,7 +260,7 @@ implements <a href="../Event.html" title="interface in com.nookure.staff.api.eve
 <section class="detail" id="equals(java.lang.Object)">
 <h3>equals</h3>
 <div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
-<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>.</div>
+<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. Reference components are compared with <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>; primitive components are compared with '=='.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></code></dd>
@@ -272,6 +292,17 @@ implements <a href="../Event.html" title="interface in com.nookure.staff.api.eve
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the value of the <code>permission</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="showInConsole()">
+<h3>showInConsole</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">showInConsole</span>()</div>
+<div class="block">Returns the value of the <code>showInConsole</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>showInConsole</code> record component</dd>
 </dl>
 </section>
 </li>
