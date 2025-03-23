@@ -92,6 +92,8 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/nookure/staff/api/config/bukkit/partials/messages/StaffModePartial.html#actionBar()" class="member-name-link">actionBar()</a> - Method in class com.nookure.staff.api.config.bukkit.partials.messages.<a href="com/nookure/staff/api/config/bukkit/partials/messages/StaffModePartial.html" title="class in com.nookure.staff.api.config.bukkit.partials.messages">StaffModePartial</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/nookure/staff/api/config/bukkit/partials/config/StaffModePartial.html#actionBarOnVanish()" class="member-name-link">actionBarOnVanish()</a> - Method in class com.nookure.staff.api.config.bukkit.partials.config.<a href="com/nookure/staff/api/config/bukkit/partials/config/StaffModePartial.html" title="class in com.nookure.staff.api.config.bukkit.partials.config">StaffModePartial</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/nookure/staff/api/config/common/CommandConfig.html#addCommand(java.lang.String,com.nookure.staff.api.config.common.CommandPartial)" class="member-name-link">addCommand(String, CommandPartial)</a> - Method in class com.nookure.staff.api.config.common.<a href="com/nookure/staff/api/config/common/CommandConfig.html" title="class in com.nookure.staff.api.config.common">CommandConfig</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/nookure/staff/api/manager/FreezeManager.html#addFreezeContainer(java.util.UUID,com.nookure.staff.api.manager.FreezeManager.FreezeContainer)" class="member-name-link">addFreezeContainer(UUID, FreezeManager.FreezeContainer)</a> - Method in class com.nookure.staff.api.manager.<a href="com/nookure/staff/api/manager/FreezeManager.html" title="class in com.nookure.staff.api.manager">FreezeManager</a></dt>
@@ -958,7 +960,7 @@ loadScripts(document, 'script');</script>
 <dd>&nbsp;</dd>
 <dt><a href="com/nookure/staff/api/event/EventVector.html" class="type-name-link" title="class in com.nookure.staff.api.event">EventVector</a> - Record Class in <a href="com/nookure/staff/api/event/package-summary.html">com.nookure.staff.api.event</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/nookure/staff/api/event/EventVector.html#%3Cinit%3E(java.lang.reflect.Method,java.lang.Object,com.nookure.staff.api.event.NookSubscribe)" class="member-name-link">EventVector(Method, Object, NookSubscribe)</a> - Constructor for record class com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventVector.html" title="class in com.nookure.staff.api.event">EventVector</a></dt>
+<dt><a href="com/nookure/staff/api/event/EventVector.html#%3Cinit%3E(java.lang.reflect.Method,java.lang.ref.Reference,com.nookure.staff.api.event.NookSubscribe)" class="member-name-link">EventVector(Method, Reference&lt;Object&gt;, NookSubscribe)</a> - Constructor for record class com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventVector.html" title="class in com.nookure.staff.api.event">EventVector</a></dt>
 <dd>
 <div class="block">Creates an instance of a <code>EventVector</code> record class.</div>
 </dd>
@@ -2803,19 +2805,23 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/nookure/staff/api/extension/StaffPlayerExtensionManager.html#registerExtension(java.lang.Class,java.lang.Class)" class="member-name-link">registerExtension(Class&lt;? extends StaffPlayerExtension&gt;, Class&lt;? extends StaffPlayerExtension&gt;)</a> - Method in class com.nookure.staff.api.extension.<a href="com/nookure/staff/api/extension/StaffPlayerExtensionManager.html" title="class in com.nookure.staff.api.extension">StaffPlayerExtensionManager</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/nookure/staff/api/event/EventManager.html#registerListener(java.lang.Object)" class="member-name-link">registerListener(Object)</a> - Method in class com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventManager.html" title="class in com.nookure.staff.api.event">EventManager</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/nookure/staff/api/addons/AddonManager.html#registerListener(java.lang.Object,com.nookure.staff.api.addons.AddonContainer)" class="member-name-link">registerListener(Object, AddonContainer)</a> - Method in interface com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonManager.html" title="interface in com.nookure.staff.api.addons">AddonManager</a></dt>
+<dd>
+<div class="block">Registers a listener to the event manager</div>
+</dd>
+<dt><a href="com/nookure/staff/api/event/EventManager.html#registerListenerReference(java.lang.ref.Reference)" class="member-name-link">registerListenerReference(Reference&lt;Object&gt;)</a> - Method in class com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventManager.html" title="class in com.nookure.staff.api.event">EventManager</a></dt>
 <dd>
 <div class="block">Register a listener object
  The class must have methods annotated with <a href="com/nookure/staff/api/event/NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event"><code>NookSubscribe</code></a>
  in order to work, otherwise it will be ignored</div>
 </dd>
-<dt><a href="com/nookure/staff/api/addons/AddonManager.html#registerListener(java.lang.Object,com.nookure.staff.api.addons.AddonContainer)" class="member-name-link">registerListener(Object, AddonContainer)</a> - Method in interface com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonManager.html" title="interface in com.nookure.staff.api.addons">AddonManager</a></dt>
-<dd>
-<div class="block">Registers a listener to the event manager</div>
-</dd>
 <dt><a href="com/nookure/staff/api/addons/AddonManager.html#registerListeners(java.lang.Class,com.nookure.staff.api.addons.AddonContainer)" class="member-name-link">registerListeners(Class&lt;?&gt;, AddonContainer)</a> - Method in interface com.nookure.staff.api.addons.<a href="com/nookure/staff/api/addons/AddonManager.html" title="interface in com.nookure.staff.api.addons">AddonManager</a></dt>
 <dd>
 <div class="block">Registers a listener to the event manager</div>
 </dd>
+<dt><a href="com/nookure/staff/api/event/EventManager.html#registerListenerWeakly(java.lang.Object)" class="member-name-link">registerListenerWeakly(Object)</a> - Method in class com.nookure.staff.api.event.<a href="com/nookure/staff/api/event/EventManager.html" title="class in com.nookure.staff.api.event">EventManager</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/nookure/staff/api/placeholder/PlaceholderManager.html#registerPlaceholder(com.nookure.staff.api.placeholder.Placeholder)" class="member-name-link">registerPlaceholder(Placeholder)</a> - Method in class com.nookure.staff.api.placeholder.<a href="com/nookure/staff/api/placeholder/PlaceholderManager.html" title="class in com.nookure.staff.api.placeholder">PlaceholderManager</a></dt>
 <dd>
 <div class="block">Register a placeholder</div>
