@@ -91,7 +91,7 @@ loadScripts(document, 'script');</script>
 </div>
 <section class="class-description" id="class-description">
 <hr>
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">EventVector</span>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a>&nbsp;method, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ref/Reference.html" title="class or interface in java.lang.ref" class="external-link">Reference</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;listener, <a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a>&nbsp;nookSubscribe)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">EventVector</span>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a>&nbsp;method, <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;listener, <a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a>&nbsp;nookSubscribe, boolean&nbsp;weak)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></span></div>
 </section>
 <section class="summary">
@@ -104,11 +104,12 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.reflect.Method,java.lang.ref.Reference,com.nookure.staff.api.event.NookSubscribe)" class="member-name-link">EventVector</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a>&nbsp;method,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ref/Reference.html" title="class or interface in java.lang.ref" class="external-link">Reference</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;listener,
- <a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a>&nbsp;nookSubscribe)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.reflect.Method,java.lang.Object,com.nookure.staff.api.event.NookSubscribe,boolean)" class="member-name-link">EventVector</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a>&nbsp;method,
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;listener,
+ <a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a>&nbsp;nookSubscribe,
+ boolean&nbsp;weak)</code></div>
 <div class="col-last even-row-color">
-<div class="block">Creates an instance of a <code>EventVector</code> record class.</div>
+<div class="block">Create a new event vector</div>
 </div>
 </div>
 </section>
@@ -134,10 +135,10 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a hash code value for this object.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ref/Reference.html" title="class or interface in java.lang.ref" class="external-link">Reference</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#listener()" class="member-name-link">listener</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the value of the <code>listener</code> record component.</div>
+<div class="block">Get the listener</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#method()" class="member-name-link">method</a>()</code></div>
@@ -153,6 +154,11 @@ loadScripts(document, 'script');</script>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#toString()" class="member-name-link">toString</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Returns a string representation of this record class.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#weak()" class="member-name-link">weak</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Returns the value of the <code>weak</code> record component.</div>
 </div>
 </div>
 </div>
@@ -172,17 +178,19 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.reflect.Method,java.lang.ref.Reference,com.nookure.staff.api.event.NookSubscribe)">
+<section class="detail" id="&lt;init&gt;(java.lang.reflect.Method,java.lang.Object,com.nookure.staff.api.event.NookSubscribe,boolean)">
 <h3>EventVector</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">EventVector</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect" class="external-link">Method</a>&nbsp;method,
- <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ref/Reference.html" title="class or interface in java.lang.ref" class="external-link">Reference</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;&nbsp;listener,
- <a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a>&nbsp;nookSubscribe)</span></div>
-<div class="block">Creates an instance of a <code>EventVector</code> record class.</div>
+ <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;listener,
+ <a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a>&nbsp;nookSubscribe,
+ boolean&nbsp;weak)</span></div>
+<div class="block">Create a new event vector</div>
 <dl class="notes">
 <dt>Parameters:</dt>
-<dd><code>method</code> - the value for the <code>method</code> record component</dd>
-<dd><code>listener</code> - the value for the <code>listener</code> record component</dd>
-<dd><code>nookSubscribe</code> - the value for the <code>nookSubscribe</code> record component</dd>
+<dd><code>method</code> - The method to call</dd>
+<dd><code>listener</code> - The listener to call the method on</dd>
+<dd><code>nookSubscribe</code> - The nook subscribe annotation</dd>
+<dd><code>weak</code> - Whether the listener is weak or not</dd>
 </dl>
 </section>
 </li>
@@ -194,6 +202,18 @@ loadScripts(document, 'script');</script>
 <section class="method-details" id="method-detail">
 <h2>Method Details</h2>
 <ul class="member-list">
+<li>
+<section class="detail" id="listener()">
+<h3>listener</h3>
+<div class="member-signature"><span class="annotations">@Nullable
+</span><span class="modifiers">public</span>&nbsp;<span class="return-type">@Nullable <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a></span>&nbsp;<span class="element-name">listener</span>()</div>
+<div class="block">Get the listener</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>The listener</dd>
+</dl>
+</section>
+</li>
 <li>
 <section class="detail" id="toString()">
 <h3>toString</h3>
@@ -224,7 +244,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="equals(java.lang.Object)">
 <h3>equals</h3>
 <div class="member-signature"><span class="modifiers">public final</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">equals</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;o)</span></div>
-<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>.</div>
+<div class="block">Indicates whether some other object is "equal to" this one. The objects are equal if the other object is of the same class and if all the record components are equal. Reference components are compared with <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)" title="class or interface in java.util" class="external-link"><code>Objects::equals(Object,Object)</code></a>; primitive components are compared with '=='.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a></code></dd>
@@ -247,17 +267,6 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="listener()">
-<h3>listener</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ref/Reference.html" title="class or interface in java.lang.ref" class="external-link">Reference</a>&lt;<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&gt;</span>&nbsp;<span class="element-name">listener</span>()</div>
-<div class="block">Returns the value of the <code>listener</code> record component.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>the value of the <code>listener</code> record component</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="nookSubscribe()">
 <h3>nookSubscribe</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="NookSubscribe.html" title="annotation interface in com.nookure.staff.api.event">NookSubscribe</a></span>&nbsp;<span class="element-name">nookSubscribe</span>()</div>
@@ -265,6 +274,17 @@ loadScripts(document, 'script');</script>
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the value of the <code>nookSubscribe</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="weak()">
+<h3>weak</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">weak</span>()</div>
+<div class="block">Returns the value of the <code>weak</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>weak</code> record component</dd>
 </dl>
 </section>
 </li>
